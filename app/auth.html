@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>AC Carioca - Aluguel de Materiais para Festas em Marília/SP</title>
+        <!-- INSERIR META DESCRIPTION -->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- INSERIR FAVICONS -->
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <!-- Custom Styles -->  
+        <link rel="stylesheet" href="assets/css/style.min.css"> 
+    </head>
+    <body id="home">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->        
+        @@include('src/elements/header.html', { "page": "home"})
+		<main>
+			<h1>Autenticação</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4">
+						<div id="auth-msg" class="alert">Você não está autenticado</div>
+						<form action="">
+							<div class="form-group">
+								<label for="emailInput">E-mail</label>
+								<input type="email" id="emailInput" class="form-control" placeholder="E-mail">
+							</div>
+							<div class="form-group">
+								<label for="passwordInput">Senha</label>
+								<input type="password" id="passwordInput" class="form-control" placeholder="Senha">
+							</div>
+						</form>
+						<button class="btn btn-lg btn-block btn-primary" id="authEmailPassButton">Autenticar</button>
+						<button class="btn btn-lg btn-block btn-default" id="authEmailPassLogout">Sair</button>
+						<button class="btn btn-lg btn-block btn-default" id="authEmailPassGetUser">Usuário</button>
+					</div>					
+				</div>
+			</div>
+		</main>
+		@@include('src/elements/footer.html')	
+		<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>	
+       	<script src="assets/js/script.min.js"></script>
+       	<!-- INSERIR GOOGLE ANALYTICS -->
+       	<!-- INSERIR GOOGLE TAGMANAGER -->
+    </body>
+</html>

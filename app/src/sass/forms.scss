@@ -1,0 +1,49 @@
+nav{
+	form{
+		float: right;
+		
+		fieldset{
+			border: 1px solid #EDEDED;
+			&:hover {
+    			border-color: $header-color !important;
+    			-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(213, 14, 14,0.6);
+    			box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(213, 14, 14,0.6);
+    		}
+
+    	}
+    	input,
+    	button{
+    		border: 0px !important;
+    		box-shadow: none !important;
+    	}
+    	input{
+    		width: 240px !important;
+    	}
+    	button{
+    		background: white;
+    		color: #333;
+    	}
+    	@media (max-width: 992px) { 	
+    			
+			float: none;
+			width: 90%;
+			clear: both;	
+			fieldset{
+				width: 90% !important;
+				margin: 5%;
+				.input-group{
+					width: 80% !important;
+					float: left;
+					input{
+						width: 100% !important;
+
+					}
+				}
+				button{
+					width: 20% !important;
+				}
+			}	
+			
+		}
+	}
+}

@@ -1,0 +1,62 @@
+img{ max-width: 100%;}
+body{
+	font-family: $josefin;
+	max-width: 1330px;
+
+	margin: 0 auto;
+	header{
+		display: block;		
+		h1{			
+			float: left;
+			width: 25%;	
+			@media (max-width: 992px) { 
+				float: none;
+				margin: 10px auto;
+				width: 50%;
+			}
+			
+		}	
+	}
+	main{
+		display: block;
+		clear: both;	
+	}
+}
+#home{
+	main{
+		div{
+			padding: 0px;
+			&.row{
+				margin: 0px;
+				h2{
+					margin: 1px;
+				}				
+			}
+		}
+	}
+}
+footer{
+	max-width: 690px;
+	margin: 0 auto;
+	strong{
+		display: block;
+	}
+	ul{
+		list-style: none;
+		padding: 0;
+	}
+	.social{
+		text-align: center;
+		a{
+			display: inline-block;
+			width: 40px;
+			height: 40px;			
+			background: black;
+			color: white;
+			font-size: 18px;
+			line-height: 40px;
+			border-radius: 20px;
+			margin: 5px;
+		}
+	}
+}

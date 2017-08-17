@@ -1,0 +1,30 @@
+{
+  "name": "accarioca",
+  "description": "Site de Aluguel de Material para Festas",
+  "main": "index.html",
+  "authors": [
+    "Will Angelico"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "site"
+  ],
+  "homepage": "https://github.com/willangelico/accarioca",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "modernizr": "^3.5.0",
+    "normalize-strings": "normalize#^1.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "public": "dist",
+    "headers": [ {
+	  "source" : "/**/**/*.@(jpg|jpeg|gif|png)",
+	  "headers" : [ {
+	    "key" : "Cache-Control",
+        "value" : "max-age=604800"
+	  } ]
+	} ],
+	"rewrites": [ {
+	    "source": "/index",
+	    "destination": "/index.html"
+	  },
+	  {
+	  	"source": "/auth",
+	    "destination": "/auth.html"
+	  } ]
+  }
+}
